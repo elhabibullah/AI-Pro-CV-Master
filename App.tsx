@@ -9,42 +9,39 @@ import {
   Plus, 
   Trash2, 
   ChevronDown, 
-  ChevronUp,
-  Wand2,
-  Printer,
-  Globe,
-  FileText,
-  Import,
-  MessageSquare,
-  Menu,
-  X,
-  User,
-  Image as ImageIcon,
-  CheckCircle2,
-  Layout,
-  Type,
-  ArrowLeft,
-  GraduationCap,
-  Hammer,
-  Languages,
-  Heart,
-  Eye,
-  ZoomIn,
-  Move,
-  Upload,
-  FileIcon,
-  RefreshCw,
+  ChevronUp, 
+  Wand2, 
+  Printer, 
+  Globe, 
+  FileText, 
+  Import, 
+  MessageSquare, 
+  Menu, 
+  X, 
+  User, 
+  Image as ImageIcon, 
+  CheckCircle2, 
+  ArrowLeft, 
+  GraduationCap, 
+  Hammer, 
+  Languages, 
+  Heart, 
+  Eye, 
+  ZoomIn, 
+  Move, 
+  Upload, 
+  RefreshCw, 
   Check
 } from 'lucide-react';
 
 const uiTranslations = {
-  fr: { title: "CV Master Pro", startTitle: "Choisissez votre modèle", startSubtitle: "Des designs professionnels, prêts à l'emploi.", tabContent: "Éditeur", tabDesign: "Design", tabImport: "Import IA", generate: "Générer avec IA", download: "Télécharger", save: "Sauvegarder", personalInfo: "Infos Personnelles", experience: "Expérience Pro", education: "Formation", skills: "Compétences", languages: "Langues", hobbies: "Hobbys", addExp: "Ajouter", addEdu: "Ajouter Formation", addSkill: "Ajouter Compétence", addLang: "Ajouter Langue", addHobby: "Ajouter Hobby", improve: "Améliorer (IA)", importTitle: "Import Intelligent", importDesc: "Collez votre ancien CV complet ici. L'IA va tout extraire.", analyzeBtn: "Analyser le CV", analyzing: "Analyse en cours...", preview: "Aperçu A4", openDrawer: "Ouvrir", closeDrawer: "Fermer", photo: "Photo", selectTemplate: "Modèles", backToGallery: "Retour", fonts: "Typographie", colors: "Couleurs", viewPreview: "Voir l'aperçu", uploadTitle: "Scanner un CV (PDF/Image)", uploadDesc: "Glissez votre fichier ici pour une extraction complète.", or: "OU", textMode: "Mode Texte", fileMode: "Mode Fichier", done: "Terminer", translating: "Traduction..." },
-  en: { title: "CV Master Pro", startTitle: "Choose your template", startSubtitle: "Professional designs, ready to use.", tabContent: "Editor", tabDesign: "Design", tabImport: "AI Import", generate: "Generate with AI", download: "Download", save: "Save", personalInfo: "Personal Info", experience: "Work Experience", education: "Education", skills: "Skills", languages: "Languages", hobbies: "Hobbies", addExp: "Add Work", addEdu: "Add Education", addSkill: "Add Skill", addLang: "Add Language", addHobby: "Add Hobby", improve: "Improve (AI)", importTitle: "Smart Import", importDesc: "Paste your full CV here. AI will extract everything.", analyzeBtn: "Analyze Resume", analyzing: "Analyzing...", preview: "A4 Preview", openDrawer: "Open", closeDrawer: "Close", photo: "Photo", selectTemplate: "Templates", backToGallery: "Back", fonts: "Typography", colors: "Colors", viewPreview: "View Preview", uploadTitle: "Scan Resume (PDF/Image)", uploadDesc: "Drop your file here for full extraction.", or: "OR", textMode: "Text Mode", fileMode: "File Mode", done: "Done", translating: "Translating..." },
-  ar: { title: "صانع السيرة الذاتية", startTitle: "اختر قالبك", startSubtitle: "تصاميم احترافية جاهزة.", tabContent: "محتوى", tabDesign: "تصميم", tabImport: "استيراد", generate: "توليد", download: "تحميل", save: "حفظ", personalInfo: "معلومات شخصية", experience: "الخبرة العملية", education: "التعليم", skills: "المهارات", languages: "اللغات", hobbies: "هوايات", addExp: "إضافة", addEdu: "إضافة تعليم", addSkill: "إضافة مهارة", addLang: "إضافة لغة", addHobby: "إضافة هواية", improve: "تحسين", importTitle: "استيراد", importDesc: "الصق سيرتك الذاتية...", analyzeBtn: "تحليل", analyzing: "...", preview: "معاينة", openDrawer: "فتح", closeDrawer: "إغلاق", photo: "صورة", selectTemplate: "قوالب", backToGallery: "عودة", fonts: "خطوط", colors: "ألوان", viewPreview: "معاينة", uploadTitle: "مسح السيرة الذاتية", uploadDesc: "أفلت ملفك هنا", or: "أو", textMode: "نص", fileMode: "ملف", done: "تم", translating: "يترجم..." },
-  nl: { title: "CV Meester", startTitle: "Kies uw sjabloon", startSubtitle: "Professionele ontwerpen.", tabContent: "Editor", tabDesign: "Ontwerp", tabImport: "AI Import", generate: "Genereren", download: "Download", save: "Opslaan", personalInfo: "Persoonlijk", experience: "Werkervaring", education: "Opleiding", skills: "Vaardigheden", languages: "Talen", hobbies: "Hobby's", addExp: "Toevoegen", addEdu: "Opleiding Toev.", addSkill: "Vaardigheid Toev.", addLang: "Taal Toev.", addHobby: "Hobby Toev.", improve: "Verbeteren", importTitle: "Slimme Import", importDesc: "Plak hier uw oude CV...", analyzeBtn: "Analyseren", analyzing: "...", preview: "Voorbeeld", openDrawer: "Open", closeDrawer: "Sluiten", photo: "Foto", selectTemplate: "Sjablonen", backToGallery: "Terug", fonts: "Typografie", colors: "Kleuren", viewPreview: "Bekijk", uploadTitle: "Scan CV", uploadDesc: "Sleep uw bestand hier", or: "OF", textMode: "Tekst", fileMode: "Bestand", done: "Klaar", translating: "Vertalen..." },
-  es: { title: "CV Maestro", startTitle: "Elige tu plantilla", startSubtitle: "Diseños profesionales.", tabContent: "Editor", tabDesign: "Diseño", tabImport: "Importar IA", generate: "Generar", download: "Descargar", save: "Guardar", personalInfo: "Información", experience: "Experiencia", education: "Educación", skills: "Habilidades", languages: "Idiomas", hobbies: "Aficiones", addExp: "Añadir", addEdu: "Añadir Edu", addSkill: "Añadir Hab", addLang: "Añadir Idioma", addHobby: "Añadir Afición", improve: "Mejorar", importTitle: "Importar", importDesc: "Pega tu CV antiguo...", analyzeBtn: "Analizar", analyzing: "...", preview: "Vista", openDrawer: "Abrir", closeDrawer: "Cerrar", photo: "Foto", selectTemplate: "Plantillas", backToGallery: "Volver", fonts: "Tipografía", colors: "Colores", viewPreview: "Vista Previa", uploadTitle: "Escanear CV", uploadDesc: "Suelta tu archivo aquí", or: "O", textMode: "Texto", fileMode: "Archivo", done: "Hecho", translating: "Traduciendo..." },
-  pt: { title: "CV Mestre", startTitle: "Escolha seu modelo", startSubtitle: "Designs profissionais.", tabContent: "Editor", tabDesign: "Design", tabImport: "Importar IA", generate: "Gerar", download: "Baixar", save: "Salvar", personalInfo: "Pessoal", experience: "Experiência", education: "Educação", skills: "Habilidades", languages: "Idiomas", hobbies: "Hobbies", addExp: "Adicionar", addEdu: "Adicionar Edu", addSkill: "Adicionar Hab", addLang: "Adicionar Língua", addHobby: "Adicionar Hobby", improve: "Melhorar", importTitle: "Importar", importDesc: "Cole seu CV antigo...", analyzeBtn: "Analisar", analyzing: "...", preview: "Visualizar", openDrawer: "Abrir", closeDrawer: "Fechar", photo: "Foto", selectTemplate: "Modelos", backToGallery: "Voltar", fonts: "Tipografia", colors: "Cores", viewPreview: "Visualizar", uploadTitle: "Escanear CV", uploadDesc: "Solte seu arquivo aqui", or: "OU", textMode: "Texto", fileMode: "Arquivo", done: "Concluído", translating: "Traduzindo..." },
-  ru: { title: "Мастер Резюме", startTitle: "Выберите шаблон", startSubtitle: "Профессиональные дизайны.", tabContent: "Редактор", tabDesign: "Дизайн", tabImport: "Импорт", generate: "Создать с ИИ", download: "Скачать", save: "Сохранить", personalInfo: "Личные данные", experience: "Опыт работы", education: "Образование", skills: "Навыки", languages: "Языки", hobbies: "Хобби", addExp: "Добавить", addEdu: "Добавить обуч.", addSkill: "Добавить навык", addLang: "Добавить язык", addHobby: "Добавить хобби", improve: "Улучшить", importTitle: "Умный Импорт", importDesc: "Вставьте текст резюме...", analyzeBtn: "Анализ", analyzing: "...", preview: "Просмотр", openDrawer: "Открыть", closeDrawer: "Закрыть", photo: "Фото", selectTemplate: "Шаблоны", backToGallery: "Назад", fonts: "Шрифты", colors: "Цвета", viewPreview: "Просмотр", uploadTitle: "Скан Резюме", uploadDesc: "Перетащите файл сюда", or: "ИЛИ", textMode: "Текст", fileMode: "Файл", done: "Готово", translating: "Перевод..." }
+  fr: { title: "CV Master Pro", startTitle: "Choisissez votre modèle", startSubtitle: "Des designs professionnels, prêts à l'emploi.", tabContent: "Éditeur", tabDesign: "Design", tabImport: "Import IA", generate: "Générer avec IA", download: "Télécharger", save: "Sauvegarder", personalInfo: "Infos Personnelles", experience: "Expérience Pro", education: "Formation", skills: "Compétences", languages: "Langues", hobbies: "Hobbys", addExp: "Ajouter", addEdu: "Ajouter Formation", addSkill: "Ajouter Compétence", addLang: "Ajouter Langue", addHobby: "Ajouter Hobby", improve: "Améliorer (IA)", importTitle: "Import Intelligent", importDesc: "Collez votre ancien CV complet ici. L'IA va tout extraire.", analyzeBtn: "Analyser le CV", analyzing: "Analyse en cours...", preview: "Aperçu A4", openDrawer: "Ouvrir", closeDrawer: "Fermer", photo: "Photo", selectTemplate: "Modèles", backToGallery: "Retour", fonts: "Typographie", colors: "Couleurs", viewPreview: "Voir l'aperçu", uploadTitle: "Scanner un CV (PDF/Image)", uploadDesc: "Glissez votre fichier ici pour une extraction complète.", or: "OU", textMode: "Mode Texte", fileMode: "Mode Fichier", done: "Terminer", translating: "Traduction...", translationError: "Erreur traduction (vérifiez API Key)" },
+  en: { title: "CV Master Pro", startTitle: "Choose your template", startSubtitle: "Professional designs, ready to use.", tabContent: "Editor", tabDesign: "Design", tabImport: "AI Import", generate: "Generate with AI", download: "Download", save: "Save", personalInfo: "Personal Info", experience: "Work Experience", education: "Education", skills: "Skills", languages: "Languages", hobbies: "Hobbies", addExp: "Add Work", addEdu: "Add Education", addSkill: "Add Skill", addLang: "Add Language", addHobby: "Add Hobby", improve: "Improve (AI)", importTitle: "Smart Import", importDesc: "Paste your full CV here. AI will extract everything.", analyzeBtn: "Analyze Resume", analyzing: "Analyzing...", preview: "A4 Preview", openDrawer: "Open", closeDrawer: "Close", photo: "Photo", selectTemplate: "Templates", backToGallery: "Back", fonts: "Typography", colors: "Colors", viewPreview: "View Preview", uploadTitle: "Scan Resume (PDF/Image)", uploadDesc: "Drop your file here for full extraction.", or: "OR", textMode: "Text Mode", fileMode: "File Mode", done: "Done", translating: "Translating...", translationError: "Translation error (check API Key)" },
+  ar: { title: "صانع السيرة الذاتية", startTitle: "اختر قالبك", startSubtitle: "تصاميم احترافية جاهزة.", tabContent: "محتوى", tabDesign: "تصميم", tabImport: "استيراد", generate: "توليد", download: "تحميل", save: "حفظ", personalInfo: "معلومات شخصية", experience: "الخبرة العملية", education: "التعليم", skills: "المهارات", languages: "اللغات", hobbies: "هوايات", addExp: "إضافة", addEdu: "إضافة تعليم", addSkill: "إضافة مهارة", addLang: "إضافة لغة", addHobby: "إضافة هواية", improve: "تحسين", importTitle: "استيراد", importDesc: "الصق سيرتك الذاتية...", analyzeBtn: "تحليل", analyzing: "...", preview: "معاينة", openDrawer: "فتح", closeDrawer: "إغلاق", photo: "صورة", selectTemplate: "قوالب", backToGallery: "عودة", fonts: "خطوط", colors: "ألوان", viewPreview: "معاينة", uploadTitle: "مسح السيرة الذاتية", uploadDesc: "أفلت ملفك هنا", or: "أو", textMode: "نص", fileMode: "ملف", done: "تم", translating: "يترجم...", translationError: "خطأ في الترجمة" },
+  nl: { title: "CV Meester", startTitle: "Kies uw sjabloon", startSubtitle: "Professionele ontwerpen.", tabContent: "Editor", tabDesign: "Ontwerp", tabImport: "AI Import", generate: "Genereren", download: "Download", save: "Opslaan", personalInfo: "Persoonlijk", experience: "Werkervaring", education: "Opleiding", skills: "Vaardigheden", languages: "Talen", hobbies: "Hobby's", addExp: "Toevoegen", addEdu: "Opleiding Toev.", addSkill: "Vaardigheid Toev.", addLang: "Taal Toev.", addHobby: "Hobby Toev.", improve: "Verbeteren", importTitle: "Slimme Import", importDesc: "Plak hier uw oude CV...", analyzeBtn: "Analyseren", analyzing: "...", preview: "Voorbeeld", openDrawer: "Open", closeDrawer: "Sluiten", photo: "Foto", selectTemplate: "Sjablonen", backToGallery: "Terug", fonts: "Typografie", colors: "Kleuren", viewPreview: "Bekijk", uploadTitle: "Scan CV", uploadDesc: "Sleep uw bestand hier", or: "OF", textMode: "Tekst", fileMode: "Bestand", done: "Klaar", translating: "Vertalen...", translationError: "Vertaalfout" },
+  es: { title: "CV Maestro", startTitle: "Elige tu plantilla", startSubtitle: "Diseños profesionales.", tabContent: "Editor", tabDesign: "Diseño", tabImport: "Importar IA", generate: "Generar", download: "Descargar", save: "Guardar", personalInfo: "Información", experience: "Experiencia", education: "Educación", skills: "Habilidades", languages: "Idiomas", hobbies: "Aficiones", addExp: "Añadir", addEdu: "Añadir Edu", addSkill: "Añadir Hab", addLang: "Añadir Idioma", addHobby: "Añadir Afición", improve: "Mejorar", importTitle: "Importar", importDesc: "Pega tu CV antiguo...", analyzeBtn: "Analizar", analyzing: "...", preview: "Vista", openDrawer: "Abrir", closeDrawer: "Cerrar", photo: "Foto", selectTemplate: "Plantillas", backToGallery: "Volver", fonts: "Tipografía", colors: "Colores", viewPreview: "Vista Previa", uploadTitle: "Escanear CV", uploadDesc: "Suelta tu archivo aquí", or: "O", textMode: "Texto", fileMode: "Archivo", done: "Hecho", translating: "Traduciendo...", translationError: "Error de traducción" },
+  pt: { title: "CV Mestre", startTitle: "Escolha seu modelo", startSubtitle: "Designs profissionais.", tabContent: "Editor", tabDesign: "Design", tabImport: "Importar IA", generate: "Gerar", download: "Baixar", save: "Salvar", personalInfo: "Pessoal", experience: "Experiência", education: "Educação", skills: "Habilidades", languages: "Idiomas", hobbies: "Hobbies", addExp: "Adicionar", addEdu: "Adicionar Edu", addSkill: "Adicionar Hab", addLang: "Adicionar Língua", addHobby: "Adicionar Hobby", improve: "Melhorar", importTitle: "Importar", importDesc: "Cole seu CV antigo...", analyzeBtn: "Analisar", analyzing: "...", preview: "Visualizar", openDrawer: "Abrir", closeDrawer: "Fechar", photo: "Foto", selectTemplate: "Modelos", backToGallery: "Voltar", fonts: "Tipografia", colors: "Cores", viewPreview: "Visualizar", uploadTitle: "Escanear CV", uploadDesc: "Solte seu arquivo aqui", or: "OU", textMode: "Texto", fileMode: "Arquivo", done: "Concluído", translating: "Traduzindo...", translationError: "Erro de tradução" },
+  ru: { title: "Мастер Резюме", startTitle: "Выберите шаблон", startSubtitle: "Профессиональные дизайны.", tabContent: "Редактор", tabDesign: "Дизайн", tabImport: "Импорт", generate: "Создать с ИИ", download: "Скачать", save: "Сохранить", personalInfo: "Личные данные", experience: "Опыт работы", education: "Образование", skills: "Навыки", languages: "Языки", hobbies: "Хобби", addExp: "Добавить", addEdu: "Добавить обуч.", addSkill: "Добавить навык", addLang: "Добавить язык", addHobby: "Добавить хобби", improve: "Улучшить", importTitle: "Умный Импорт", importDesc: "Вставьте текст резюме...", analyzeBtn: "Анализ", analyzing: "...", preview: "Просмотр", openDrawer: "Открыть", closeDrawer: "Закрыть", photo: "Фото", selectTemplate: "Шаблоны", backToGallery: "Назад", fonts: "Шрифты", colors: "Цвета", viewPreview: "Просмотр", uploadTitle: "Скан Резюме", uploadDesc: "Перетащите файл сюда", or: "ИЛИ", textMode: "Текст", fileMode: "Файл", done: "Готово", translating: "Перевод...", translationError: "Ошибка перевода" }
 };
 
 const fontOptions = [
@@ -142,21 +139,23 @@ const RealTemplateCard: React.FC<{ tpl: typeof templatesList[0], onClick: () => 
 };
 
 export default function App() {
-  // Use PREVIEW_DATA by default so the user starts with the French demo data
   const [resume, setResume] = useState<ResumeData>(PREVIEW_DATA);
   const [isSelectionMode, setIsSelectionMode] = useState(true);
   const [activeTab, setActiveTab] = useState<'content' | 'design' | 'import'>('content');
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [isGenerating, setIsGenerating] = useState(false);
   const [isTranslating, setIsTranslating] = useState(false);
+  const [translationError, setTranslationError] = useState(false);
   const [isImporting, setIsImporting] = useState(false);
   const [genJobTitle, setGenJobTitle] = useState('');
   const [importText, setImportText] = useState('');
   const [importMode, setImportMode] = useState<'text' | 'file'>('file');
   const [uiLang, setUiLang] = useState<Language>('fr');
   const [isPhotoEditing, setIsPhotoEditing] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
   
-  const [previewScale, setPreviewScale] = useState(0.8); 
+  const [previewScale, setPreviewScale] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
   const previewContainerRef = useRef<HTMLDivElement>(null);
   
   const t = uiTranslations[uiLang];
@@ -171,24 +170,57 @@ export default function App() {
   });
 
   useEffect(() => {
+    const closeMenu = () => setLangMenuOpen(false);
+    window.addEventListener('click', closeMenu);
+    return () => window.removeEventListener('click', closeMenu);
+  }, []);
+
+  // --- LOGIQUE DE SCALING ROBUSTE ---
+  useEffect(() => {
     const handleResize = () => {
-        if (previewContainerRef.current) {
-            const containerWidth = previewContainerRef.current.clientWidth;
-            
-            const a4Width = 794; // approx A4 px width at 96dpi
-            const padding = 60; // Padding around preview
-            
-            // Calculate scale to fit width mainly, as height should scroll
-            const scaleX = (containerWidth - padding) / a4Width;
-            
-            // Allow zoom up to 1.1 or down to 0.4
-            setPreviewScale(Math.min(1.1, Math.max(0.4, scaleX)));
+        if (!previewContainerRef.current) return;
+
+        const container = previewContainerRef.current;
+        const containerWidth = container.clientWidth;
+        const containerHeight = container.clientHeight;
+        
+        // A4 Dimensions en Pixels (96 DPI)
+        const A4_W = 794;
+        const A4_H = 1123;
+        
+        // Détection Mobile
+        const mobile = window.innerWidth < 768;
+        setIsMobile(mobile);
+
+        let newScale = 1;
+
+        if (mobile) {
+            // MOBILE: FIT WIDTH
+            // On prend la largeur du conteneur moins un petit padding
+            // Et on divise par la largeur A4
+            const targetWidth = containerWidth - 32; // 16px padding each side
+            newScale = targetWidth / A4_W;
+        } else {
+            // DESKTOP: FIT HEIGHT (Vue globale)
+            // On prend la hauteur du conteneur moins un padding vertical confortable
+            // On s'assure que le CV rentre EN ENTIER verticalement
+            const targetHeight = containerHeight - 80; // 40px padding top/bottom
+            newScale = targetHeight / A4_H;
+
+            // Sécurité: Si l'écran est très étroit mais haut (rare sur desktop mais possible),
+            // on vérifie que la largeur passe aussi
+            const widthScale = (containerWidth - 60) / A4_W;
+            newScale = Math.min(newScale, widthScale);
         }
+
+        setPreviewScale(newScale);
     };
+
     handleResize();
     const observer = new ResizeObserver(handleResize);
     if (previewContainerRef.current) observer.observe(previewContainerRef.current);
     window.addEventListener('resize', handleResize);
+    
     return () => {
         observer.disconnect();
         window.removeEventListener('resize', handleResize);
@@ -204,6 +236,7 @@ export default function App() {
       setIsSelectionMode(false);
       setActiveTab('content'); 
       setSidebarOpen(true); 
+      setLangMenuOpen(false);
   };
 
   const handlePrint = () => {
@@ -216,7 +249,7 @@ export default function App() {
         const reader = new FileReader();
         reader.onloadend = () => {
             updatePersonalInfo('photoUrl', reader.result as string);
-            setIsPhotoEditing(true); // Automatically open editor on upload
+            setIsPhotoEditing(true);
         };
         reader.readAsDataURL(file);
     }
@@ -289,14 +322,22 @@ export default function App() {
 
   const changeLanguage = async (lang: Language) => {
       setUiLang(lang);
+      setLangMenuOpen(false);
+      setTranslationError(false);
       
-      // Automatic Translation of Resume Content
       setIsTranslating(true);
       try {
           const translatedData = await translateResumeContent(resume, lang);
-          setResume(prev => ({...prev, ...translatedData, language: lang}));
+          if (translatedData && Object.keys(translatedData).length > 0) {
+              setResume(prev => ({...prev, ...translatedData, language: lang}));
+          } else {
+              setTranslationError(true);
+              setResume(prev => ({...prev, language: lang}));
+          }
       } catch (e) {
           console.error("Auto translate failed", e);
+          setTranslationError(true);
+          setResume(prev => ({...prev, language: lang}));
       } finally {
           setIsTranslating(false);
       }
@@ -380,17 +421,22 @@ export default function App() {
                       <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center"><Sparkles size={18} fill="white"/></div>
                       {t.title}
                   </div>
-                  <div className="relative group">
-                        <button className="flex items-center gap-1 text-xs bg-slate-800 px-3 py-1.5 rounded-full text-slate-300 hover:text-white uppercase font-bold border border-slate-700">
+                  <div className="relative">
+                        <button 
+                            onClick={(e) => { e.stopPropagation(); setLangMenuOpen(!langMenuOpen); }}
+                            className="flex items-center gap-1 text-xs bg-slate-800 px-3 py-1.5 rounded-full text-slate-300 hover:text-white uppercase font-bold border border-slate-700"
+                        >
                             <Globe size={14} /> {uiLang}
                         </button>
-                        <div className="absolute right-0 mt-1 w-24 bg-slate-800 rounded shadow-xl hidden group-hover:block border border-slate-700 z-50">
-                            {['fr', 'en', 'ar', 'nl', 'es', 'pt', 'ru'].map(l => (
-                                <button key={l} onClick={() => changeLanguage(l as Language)} className="block w-full text-left px-3 py-2 text-xs text-slate-300 hover:bg-slate-700 hover:text-white uppercase">
-                                    {l}
-                                </button>
-                            ))}
-                        </div>
+                        {langMenuOpen && (
+                            <div className="absolute right-0 mt-1 w-24 bg-slate-800 rounded shadow-xl border border-slate-700 z-50">
+                                {['fr', 'en', 'ar', 'nl', 'es', 'pt', 'ru'].map(l => (
+                                    <button key={l} onClick={() => changeLanguage(l as Language)} className="block w-full text-left px-3 py-2 text-xs text-slate-300 hover:bg-slate-700 hover:text-white uppercase">
+                                        {l}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                     </div>
               </div>
 
@@ -448,7 +494,7 @@ export default function App() {
             </div>
 
             <div className="flex-1 overflow-y-auto p-4 md:p-5 space-y-4 pb-20 scrollbar-hide bg-slate-950 w-full">
-                
+                {/* CONTENT TAB */}
                 {activeTab === 'content' && (
                     <div className="animate-in fade-in duration-300 space-y-4">
                         <div className="bg-indigo-900/30 p-4 rounded-xl border border-indigo-500/30">
@@ -503,45 +549,23 @@ export default function App() {
                                         </div>
                                     </div>
 
-                                    {/* PHOTO ADJUSTMENT CONTROLS */}
                                     {resume.personalInfo.photoUrl && isPhotoEditing && (
                                         <div className="p-3 bg-slate-950 rounded border border-slate-700 space-y-3 mb-4 animate-in fade-in zoom-in-95 duration-200">
                                             <div className="flex items-center justify-between text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">
                                                 <span>Recadrage</span>
                                                 <button onClick={() => setIsPhotoEditing(false)} className="bg-green-600 text-white px-2 py-0.5 rounded flex items-center gap-1 hover:bg-green-500"><Check size={10}/> {t.done}</button>
                                             </div>
-                                            
-                                            {/* Zoom */}
                                             <div className="flex items-center gap-3">
                                                 <ZoomIn size={14} className="text-slate-500"/>
-                                                <input 
-                                                    type="range" min="1" max="3" step="0.1"
-                                                    value={resume.personalInfo.photoConfig?.zoom || 1}
-                                                    onChange={(e) => updatePhotoConfig('zoom', parseFloat(e.target.value))}
-                                                    className="flex-1 h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
-                                                />
+                                                <input type="range" min="1" max="3" step="0.1" value={resume.personalInfo.photoConfig?.zoom || 1} onChange={(e) => updatePhotoConfig('zoom', parseFloat(e.target.value))} className="flex-1 h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                                             </div>
-
-                                            {/* X Axis */}
                                             <div className="flex items-center gap-3">
                                                 <Move size={14} className="text-slate-500 rotate-90"/>
-                                                <input 
-                                                    type="range" min="-50" max="50" step="1"
-                                                    value={resume.personalInfo.photoConfig?.x || 0}
-                                                    onChange={(e) => updatePhotoConfig('x', parseInt(e.target.value))}
-                                                    className="flex-1 h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
-                                                />
+                                                <input type="range" min="-50" max="50" step="1" value={resume.personalInfo.photoConfig?.x || 0} onChange={(e) => updatePhotoConfig('x', parseInt(e.target.value))} className="flex-1 h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                                             </div>
-
-                                            {/* Y Axis */}
                                             <div className="flex items-center gap-3">
                                                 <Move size={14} className="text-slate-500"/>
-                                                <input 
-                                                    type="range" min="-50" max="50" step="1"
-                                                    value={resume.personalInfo.photoConfig?.y || 0}
-                                                    onChange={(e) => updatePhotoConfig('y', parseInt(e.target.value))}
-                                                    className="flex-1 h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
-                                                />
+                                                <input type="range" min="-50" max="50" step="1" value={resume.personalInfo.photoConfig?.y || 0} onChange={(e) => updatePhotoConfig('y', parseInt(e.target.value))} className="flex-1 h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                                             </div>
                                         </div>
                                     )}
@@ -683,6 +707,7 @@ export default function App() {
                     </div>
                 )}
 
+                {/* DESIGN TAB */}
                 {activeTab === 'design' && (
                   <div className="animate-in fade-in duration-300">
                      <div className="mb-6">
@@ -699,7 +724,6 @@ export default function App() {
                             ))}
                         </div>
                      </div>
-
                      <div className="mb-6">
                         <label className="text-xs font-bold text-slate-500 uppercase mb-3 block tracking-wider">{t.colors}</label>
                         <div className="flex flex-wrap gap-3">
@@ -715,7 +739,6 @@ export default function App() {
                             ))}
                         </div>
                      </div>
-
                      <div className="mb-6">
                         <label className="text-xs font-bold text-slate-500 uppercase mb-3 block tracking-wider">{t.fonts}</label>
                         <div className="space-y-2">
@@ -734,11 +757,11 @@ export default function App() {
                   </div>
                 )}
 
+                {/* IMPORT TAB */}
                 {activeTab === 'import' && (
                     <div className="animate-in fade-in duration-300">
                         <div className="bg-slate-900 p-5 rounded-xl border border-slate-700">
                             <h3 className="text-white font-bold flex items-center gap-2 mb-4 text-sm uppercase tracking-wide"><MessageSquare size={16} className="text-green-400"/> {t.importTitle}</h3>
-                            
                             <div className="flex gap-2 mb-4">
                                 <button onClick={() => setImportMode('file')} className={`flex-1 py-2 text-xs font-bold uppercase rounded-lg border transition-all ${importMode === 'file' ? 'bg-blue-600 text-white border-blue-500' : 'bg-slate-950 text-slate-400 border-slate-700 hover:bg-slate-900'}`}>
                                     {t.fileMode}
@@ -747,7 +770,6 @@ export default function App() {
                                     {t.textMode}
                                 </button>
                             </div>
-
                             {importMode === 'file' ? (
                                 <div className="border-2 border-dashed border-slate-700 rounded-lg p-8 text-center bg-slate-950/50 hover:bg-slate-950 hover:border-blue-500 transition-colors relative">
                                     <input type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" onChange={handleResumeFileUpload} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" disabled={isImporting} />
@@ -783,6 +805,7 @@ export default function App() {
          </button>
       )}
 
+      {/* PREVIEW SECTION - LOGIC REWORKED */}
       <div className={`bg-slate-800 h-full flex flex-col transition-all duration-300 relative ${sidebarOpen ? 'md:ml-[400px]' : 'ml-0'} w-full`}>
         <div className="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:20px_20px] opacity-20 pointer-events-none"></div>
         <div className="w-full max-w-4xl mt-4 mb-2 flex justify-between items-center z-10 px-6 shrink-0 mx-auto">
@@ -792,30 +815,54 @@ export default function App() {
                         <Sparkles size={14}/> {t.translating}
                     </span>
                 )}
+                {translationError && (
+                    <span className="text-red-400 flex items-center gap-2 text-xs font-bold bg-red-900/50 px-3 py-1 rounded-full border border-red-800 animate-in fade-in">
+                        {t.translationError}
+                    </span>
+                )}
             </div>
             
             <div className="flex gap-2">
-                 <div className="relative group">
-                    <button className="flex items-center gap-2 bg-slate-900/80 backdrop-blur px-3 py-2 rounded-full border border-slate-700 text-slate-300 text-xs font-bold hover:text-white hover:border-slate-500 transition-all">
+                 <div className="relative">
+                    <button 
+                        onClick={(e) => { e.stopPropagation(); setLangMenuOpen(!langMenuOpen); }}
+                        className="flex items-center gap-2 bg-slate-900/80 backdrop-blur px-3 py-2 rounded-full border border-slate-700 text-slate-300 text-xs font-bold hover:text-white hover:border-slate-500 transition-all"
+                    >
                         <Globe size={14} /> {uiLang}
                     </button>
-                    <div className="absolute right-0 top-full mt-2 w-32 bg-slate-800 rounded-lg shadow-xl hidden group-hover:block border border-slate-700 z-50 overflow-hidden">
-                        {['fr', 'en', 'ar', 'nl', 'es', 'pt', 'ru'].map(l => (
-                            <button key={l} onClick={() => changeLanguage(l as Language)} className="block w-full text-left px-4 py-3 text-xs text-slate-300 hover:bg-blue-600 hover:text-white uppercase font-bold">
-                                {l}
-                            </button>
-                        ))}
-                    </div>
+                    {langMenuOpen && (
+                        <div className="absolute right-0 top-full mt-2 w-32 bg-slate-800 rounded-lg shadow-xl border border-slate-700 z-50 overflow-hidden">
+                            {['fr', 'en', 'ar', 'nl', 'es', 'pt', 'ru'].map(l => (
+                                <button key={l} onClick={() => changeLanguage(l as Language)} className="block w-full text-left px-4 py-3 text-xs text-slate-300 hover:bg-blue-600 hover:text-white uppercase font-bold">
+                                    {l}
+                                </button>
+                            ))}
+                        </div>
+                    )}
                 </div>
-
                 <button onClick={handlePrint} className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg shadow-blue-900/50 flex items-center gap-2 text-xs font-bold transition-all hover:-translate-y-0.5">
                 <Printer size={14} /> {t.download}
                 </button>
             </div>
         </div>
 
-        <div ref={previewContainerRef} className="flex-1 w-full overflow-y-auto overflow-x-hidden flex justify-center p-8 bg-slate-800 relative">
-             <div className="transition-transform duration-300 ease-out origin-top shadow-2xl" style={{ transform: `scale(${previewScale})`, width: '210mm', minHeight: '297mm', height: 'fit-content' }}>
+        {/* CONTENEUR PREVIEW AVEC NOUVELLE LOGIQUE */}
+        <div 
+            ref={previewContainerRef} 
+            className={`flex-1 w-full bg-slate-800 relative flex ${isMobile ? 'overflow-y-auto items-start p-4 justify-center' : 'overflow-hidden items-center justify-center'}`}
+        >
+             <div 
+                className="transition-transform duration-300 ease-out shadow-2xl bg-white shrink-0 origin-top" 
+                style={{ 
+                    transform: `scale(${previewScale})`,
+                    // CES DIMENSIONS SONT CRUCIALES POUR EVITER LE "TICKET DE CAISSE"
+                    width: '794px', 
+                    height: '1123px',
+                    minWidth: '794px',
+                    minHeight: '1123px',
+                    transformOrigin: isMobile ? 'top center' : 'center center'
+                }}
+             >
                 <ResumePreview data={resume} />
              </div>
         </div>
